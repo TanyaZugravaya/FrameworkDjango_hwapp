@@ -53,3 +53,131 @@ C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\models.py changed, 
 Watching for file changes with StatReloader
 C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\models.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /hwapp/orders/2 HTTP/1.1" 301 0
+Internal Server Error: /hwapp/orders/2/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 50, in client_orders
+    client_orders = Order.objects.filter(client_id=client_id)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'client_id' into field. Choices are: customer, customer_id, date_ordered, id, products, total_price
+"GET /hwapp/orders/2/ HTTP/1.1" 500 109732
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/orders/2/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'client_id'
+"GET /hwapp/orders/2/ HTTP/1.1" 500 62865
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/orders/2/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'client_id'
+"GET /hwapp/orders/2/ HTTP/1.1" 500 62865
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/orders/2/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 54, in client_orders
+    orders_last_week = orders.filter(date_ordered__gte=timezone.now() - timedelta(days=7)).distinct()
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
+"GET /hwapp/orders/2/ HTTP/1.1" 500 67222
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /hwapp/orders/2/ HTTP/1.1" 200 338
+"GET /hwapp/orders/3 HTTP/1.1" 301 0
+"GET /hwapp/orders/3/ HTTP/1.1" 200 339
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /hwapp/orders/3/ HTTP/1.1" 200 148
+"GET /hwapp/client_orders/3/ HTTP/1.1" 200 339
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+"GET /hwapp/orders/3/ HTTP/1.1" 200 148
+"GET /hwapp/client_orders/5 HTTP/1.1" 301 0
+Internal Server Error: /hwapp/client_orders/5/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 61, in client_orders
+    client = Client.objects.get(id=client_id)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hwapp.models.Client.DoesNotExist: Client matching query does not exist.
+"GET /hwapp/client_orders/5/ HTTP/1.1" 500 75288
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/client_orders/5/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 61, in client_orders
+    client = Client.objects.get(id=client_id)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+hwapp.models.Client.DoesNotExist: Client matching query does not exist.
+"GET /hwapp/client_orders/5/ HTTP/1.1" 500 75425
+"GET /hwapp/client_orders/3 HTTP/1.1" 301 0
+"GET /hwapp/client_orders/3/ HTTP/1.1" 200 1509
+"GET /hwapp/client_orders/2 HTTP/1.1" 301 0
+"GET /hwapp/client_orders/2/ HTTP/1.1" 200 1508
+"GET /hwapp/client_orders/3/ HTTP/1.1" 200 1509
