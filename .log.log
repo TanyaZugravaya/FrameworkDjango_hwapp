@@ -1,9 +1,0 @@
-Watching for file changes with StatReloader
-Not Found: /
-"GET / HTTP/1.1" 404 2168
-Посетили главную страницу
-"GET /hwapp/ HTTP/1.1" 200 313
-Посетили страницу "О себе"
-"GET /hwapp/about/ HTTP/1.1" 200 200
-C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
-Watching for file changes with StatReloader

@@ -126,7 +126,7 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.FileHandler',
-            'filename': '.log.log',
+            'filename': 'log.log',
             'encoding': 'utf-8',
         },
     },
