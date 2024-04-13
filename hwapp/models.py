@@ -13,6 +13,13 @@ class Client(models.Model):
                 f'address: {self.address}, date_registr_client: {self.date_registr_client}')
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
 class Product(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
@@ -20,6 +27,7 @@ class Product(models.Model):
     quantity = models.IntegerField(null=True)
     date_added = models.DateField(auto_now=True)
     photo = models.ImageField(upload_to='product_photos/', null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         return (f'Name: {self.name}, description: {self.description},price: {self.price},'

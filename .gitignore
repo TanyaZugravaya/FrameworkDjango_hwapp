@@ -1,1 +1,5 @@
-/hwapp/migrations/
+
+# Игнорировать файлы pycache
+__pycache__/
+*.log
+*.pyc
