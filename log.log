@@ -1260,3 +1260,41 @@ Watching for file changes with StatReloader
 "GET /admin/hwapp/product/1/change/ HTTP/1.1" 200 14938
 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2278
+Not Found: /__debug__
+"GET /__debug__ HTTP/1.1" 404 2323
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2278
+Not Found: /
+"GET / HTTP/1.1" 404 2278
+Посетили главную страницу
+"GET /hwapp/ HTTP/1.1" 200 313
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
