@@ -181,3 +181,548 @@ hwapp.models.Client.DoesNotExist: Client matching query does not exist.
 "GET /hwapp/client_orders/2 HTTP/1.1" 301 0
 "GET /hwapp/client_orders/2/ HTTP/1.1" 200 1508
 "GET /hwapp/client_orders/3/ HTTP/1.1" 200 1509
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+"GET /hwapp HTTP/1.1" 301 0
+Посетили главную страницу
+"GET /hwapp/ HTTP/1.1" 200 313
+"GET /hwapp/edit_product HTTP/1.1" 301 0
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 101, in edit_product
+    return render(request, "edit_product.html", {"form": form, "message": message})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /hwapp/edit_product/ HTTP/1.1" 500 131635
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 101, in edit_product
+    return render(request, "hwapp/edit_product.html", {"form": form, "message": message})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hwapp/edit_product.html
+"GET /hwapp/edit_product/ HTTP/1.1" 500 81499
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 101, in edit_product
+    return render(request, "templates/edit_product.html", {"form": form, "message": message})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/edit_product.html
+"GET /hwapp/edit_product/ HTTP/1.1" 500 81563
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 101, in edit_product
+    return render(request, "edit_product.html", {"form": form, "message": message})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /hwapp/edit_product/ HTTP/1.1" 500 131623
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: hwapp/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 101, in edit_product
+    return render(request, "edit_product.html", {"form": form, "message": message})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: hwapp/base.html
+"GET /hwapp/edit_product/ HTTP/1.1" 500 131806
+"GET /hwapp/client_orders/3/ HTTP/1.1" 200 1509
+Internal Server Error: /hwapp/client_orders/3/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: hwapp/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 77, in client_orders
+    return render(request, 'client_orders.html', {
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: hwapp/base.html
+"GET /hwapp/client_orders/3/ HTTP/1.1" 500 193826
+Watching for file changes with StatReloader
+"GET /hwapp/client_orders/3/ HTTP/1.1" 200 1570
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/ HTTP/1.1" 200 1405
+"POST /hwapp/edit_product/ HTTP/1.1" 200 1464
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: edit_product() missing 1 required positional argument: 'product_id'
+"POST /hwapp/edit_product/ HTTP/1.1" 500 64637
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: edit_product() missing 1 required positional argument: 'product_id'
+"POST /hwapp/edit_product/ HTTP/1.1" 500 64637
+Not Found: /hwapp/edit_product/1
+"GET /hwapp/edit_product/1 HTTP/1.1" 404 3078
+Internal Server Error: /hwapp/edit_product/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: edit_product() missing 1 required positional argument: 'product_id'
+"GET /hwapp/edit_product/ HTTP/1.1" 500 63116
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/1 HTTP/1.1" 200 1405
+Internal Server Error: /hwapp/edit_product/1
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 100, in edit_product
+    product.save()
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+"POST /hwapp/edit_product/1 HTTP/1.1" 500 130141
+"POST /hwapp/edit_product/1 HTTP/1.1" 200 1472
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/11
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 103, in edit_product
+    form = ProductForm(instance=product)
+TypeError: BaseForm.__init__() got an unexpected keyword argument 'instance'
+"GET /hwapp/edit_product/11 HTTP/1.1" 500 66799
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hwapp/edit_product/11
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 111, in edit_product
+    form = ProductForm(instance=product)
+TypeError: BaseForm.__init__() got an unexpected keyword argument 'instance'
+"GET /hwapp/edit_product/11 HTTP/1.1" 500 66823
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+Not Found: /hwapp/edit_product/
+"GET /hwapp/edit_product/ HTTP/1.1" 404 3097
+"GET /hwapp/edit_product/11 HTTP/1.1" 200 1263
+"POST /hwapp/edit_product/11 HTTP/1.1" 302 0
+Посетили главную страницу
+"GET /hwapp/ HTTP/1.1" 200 313
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/11 HTTP/1.1" 200 1281
+"GET /hwapp/edit_product/12 HTTP/1.1" 200 1274
+"POST /hwapp/edit_product/12 HTTP/1.1" 200 1262
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /hwapp/edit_product/12 HTTP/1.1" 200 1262
+Internal Server Error: /hwapp/edit_product/4
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 96, in edit_product
+    return render(request, 'edit_product.html', {'form': form, "message": message})
+UnboundLocalError: local variable 'message' referenced before assignment
+"GET /hwapp/edit_product/4 HTTP/1.1" 500 67476
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/4 HTTP/1.1" 200 1270
+Internal Server Error: /hwapp/edit_product/4
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 92, in edit_product
+    return redirect('edit_product')
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit_product' with no arguments not found. 1 pattern(s) tried: ['hwapp/edit_product/(?P<product_id>[0-9]+)\\Z']
+"POST /hwapp/edit_product/4 HTTP/1.1" 500 88907
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /hwapp/edit_product/4 HTTP/1.1" 200 1256
+"POST /hwapp/edit_product/4 HTTP/1.1" 200 1256
+"POST /hwapp/edit_product/4 HTTP/1.1" 200 1256
+"POST /hwapp/edit_product/4 HTTP/1.1" 200 1258
+"GET /hwapp/edit_product/3 HTTP/1.1" 200 1271
+"GET /hwapp/edit_product/4 HTTP/1.1" 200 1257
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+"GET /hwapp/products HTTP/1.1" 301 0
+Internal Server Error: /hwapp/products/
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: hwapp_product.photo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py", line 54, in product_list
+    return render(request, 'product_list.html', {'products': products})
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\template\defaulttags.py", line 198, in render
+    len_values = len(values)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\админ\PycharmProjects\DjangoHW\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: hwapp_product.photo
+"GET /hwapp/products/ HTTP/1.1" 500 205971
+Watching for file changes with StatReloader
+"GET /hwapp/products/ HTTP/1.1" 200 663
+Not Found: /hwapp/edit_product/
+"GET /hwapp/edit_product/ HTTP/1.1" 404 3280
+Not Found: /hwapp/edit_product/
+"GET /hwapp/edit_product/ HTTP/1.1" 404 3280
+"GET /hwapp/edit_product/2 HTTP/1.1" 200 1399
+"GET /admin/auth/user/2/change/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/2/change/ HTTP/1.1" 200 4196
+- Broken pipe from ('127.0.0.1', 6731)
+- Broken pipe from ('127.0.0.1', 6729)
+- Broken pipe from ('127.0.0.1', 6730)
+- Broken pipe from ('127.0.0.1', 6732)
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 404 1846
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 404 1840
+- Broken pipe from ('127.0.0.1', 6733)
+- Broken pipe from ('127.0.0.1', 6734)
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 404 1840
+"POST /hwapp/edit_product/2 HTTP/1.1" 302 0
+Посетили главную страницу
+"GET /hwapp/ HTTP/1.1" 200 313
+C:\Users\админ\PycharmProjects\DjangoHW\hwproject\hwapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/2 HTTP/1.1" 200 1399
+"POST /hwapp/edit_product/2 HTTP/1.1" 302 0
+"GET /hwapp/products/ HTTP/1.1" 200 663
+Watching for file changes with StatReloader
+"GET /hwapp/edit_product/2 HTTP/1.1" 200 1399
+"POST /hwapp/edit_product/2 HTTP/1.1" 302 0
+"GET /hwapp/products/ HTTP/1.1" 200 699

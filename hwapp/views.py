@@ -3,10 +3,11 @@ from django.utils import timezone
 from datetime import timedelta
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView
 
 from .models import Order, Product, Client
+from .forms import ProductForm
 
 # Создайте пару представлений в вашем первом приложении:
 # главная и о себе.
@@ -48,6 +49,11 @@ def home(request):
     return HttpResponse(home_html)
 
 
+def product_list(request):
+    products = Product.objects.all()
+    return render(request, 'product_list.html', {'products': products})
+
+
 class OrderList(ListView):
     model = Order
     template_name = 'order_list.html'
@@ -79,3 +85,18 @@ def client_orders(request, client_id):
         'last_month_products': last_month_products,
         'last_year_products': last_year_products,
     })
+
+
+def edit_product(request, product_id):
+    product = Product.objects.get(id=product_id)
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect('product_list')
+    else:
+        form = ProductForm(instance=product)
+
+    return render(request, 'edit_product.html', {'form': form})
+
